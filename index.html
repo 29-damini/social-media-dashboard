@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Social Media Dashboard</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#messages">Messages</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="home">
+                <h2>Overview</h2>
+                <div class="stats">
+                    <div class="stat">
+                        <h3>Likes</h3>
+                        <p id="likes-count">0</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Comments</h3>
+                        <p id="comments-count">0</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Friend Requests</h3>
+                        <p id="requests-count">0</p>
+                    </div>
+                </div>
+            </section>
+            <section id="posts">
+                <h2>Your Posts</h2>
+                <div id="posts-list">
+                    <!-- Posts will be loaded here -->
+                </div>
+                <button id="load-posts">Load More Posts</button>
+            </section>
+            <section id="messages">
+                <h2>Your Messages</h2>
+                <div id="messages-list">
+                    <!-- Messages will be loaded here -->
+                </div>
+            </section>
+            <section id="settings">
+                <h2>Settings</h2>
+                <form id="settings-form">
+                    <label for="theme">Theme:</label>
+                    <select id="theme">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <button type="submit">Save Settings</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Social Media Dashboard. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+
